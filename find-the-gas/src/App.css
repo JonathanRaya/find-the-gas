@@ -1,0 +1,86 @@
+@keyframes pulse {
+  0% {
+    border-color: aqua;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: aqua;
+  }
+}
+
+.restart {
+  color: white;
+  background: transparent;
+  font-size: larger;
+  height: 5vh;
+  margin-left: 20vh;
+  width: 25vh;
+  animation: pulse 0.5s infinite;
+}
+.restart:hover {
+  color:aquamarine;
+}
+
+body {
+  background-image: url('/src/images/curve-road.jpeg');
+}
+
+h1 {
+  margin-left: 120vh;
+  max-width: 20vh;
+  background-color: rgba(250, 250, 247, 0.855);
+  text-align: center;
+}
+
+.big-box{
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.car {
+  background-image: url('/src/images/miata.jpeg');
+  background-repeat: no-repeat; 
+  background-size:100%;
+  color: white;
+  margin-top: 20vh;
+  height: 22vh;
+  width: 50vh;
+}
+.square {
+  height: 200px;
+  width: 200px;
+  border: 1px solid;
+  border-color:rgba(250, 250, 247, 0.764);
+  font-size: 10rem;
+  text-align: center;
+  background-color: rgba(2, 2, 2, 0.353);
+  transition: color 0.3s;
+}
+.square:hover {
+  color: aqua;
+}
+.board{
+  display: flex;
+  flex-wrap: wrap;  
+  width: 610px;
+  color: rgba(250, 250, 247, 0.764);
+  overflow: hidden;
+}
+.counter-box{
+  font-size:x-large;
+  color: white;
+  width: 15rem;
+  margin: auto;
+}
+.how-to{
+  background-color: rgba(250, 250, 247, 0.49);
+  font-size:xx-large;
+  max-width: 55vh;
+  border: solid;
+  border-color: black;
+  width: 80rem;
+  height: 50vh;
+}
